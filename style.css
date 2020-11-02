@@ -1,12 +1,14 @@
 body{
-    overflow: hidden;
+    background-image: url('Background.svg');
+    background-size: 100%;
+    background-position: center;
 }
 .posabs{
     position: absolute;
-    top:50%;
+    top:10%;
     left:50%;
-    transform: translate(-50%,-50%);
-    width:700px;
+    transform: translateX(-50%);
+    width: 600px;
 }
 /* Scene-1 */
 .scene-1 .svg-stroke{
@@ -280,12 +282,15 @@ body{
     opacity: 0;
 }
 .animation-text{
-    bottom: 5%;
+    padding: 0 20px;
+    bottom: 10px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     text-align: center;
-    width: 100%;
     font-family: 'Arial', sans-serif;
-    font-size: 48px;
+    font-size: 40px;
     z-index: 6;
 }
 @media only screen and (max-width: 800px) {
@@ -298,3 +303,46 @@ body{
         font-size: 24px;
     }
 }
+
+.scene-1 .posabs{
+    top:7%;
+    width: 550px;
+}
+.scene-2 .posabs{
+    top:10%;
+    width: 650px;
+}
+.scene-3 .posabs{
+    top:5%;
+    width: 500px;
+}
+.scene-4 .posabs{
+    top:15%;
+    width: 650px;
+}
+.scene-5 .posabs{
+    top:5%;
+    width: 550px;
+}
+@media only screen and (max-width: 900px) {
+.scene-1 .posabs{
+    top:20%;
+    width: 3800px;
+}
+.scene-2 .posabs{
+    top:120%;
+    width: 8300px;
+}
+.scene-3 .posabs{
+    top:20%;
+    width: 3800px;
+}
+.scene-4 .posabs{
+    top:120%;
+    width: 8300px;
+}
+.scene-5 .posabs{
+    top:20%;
+    width: 3800px;
+}
+  }
